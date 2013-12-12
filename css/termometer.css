@@ -16,12 +16,11 @@
 	position: absolute;
 	bottom:0px;
 	background: url("../images/pink_area.png")  no-repeat bottom center;
-	height: 30%;
 	width: 330px;
 	overflow: hidden;
 }
 
-img{
-	margin-top: -22px;
-	position:fixed;
+.pink-bag-top{
+	position: absolute;
+	bottom: 0px;
 }
