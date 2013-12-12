@@ -5,21 +5,21 @@ $(document).ready(function(){
 		                   {
 		                       "first_name": "Heidi",
 		                       "last_name": "Ellsworth",
-		                       "date": "5",
+		                       "date": "12/11/2013",
 		                       "hour": "5",
 		                       "minute": "3"
 		                   },
 		           		{
 		                       "first_name": "Heidi",
 		                       "last_name": "Ellsworth",
-		                       "date": "5",
+		                       "date": "12/12/2013",
 		                       "hour": "5",
 		                       "minute": "3"
 		                   },
 		           		{
 		                       "first_name": "Heidi",
 		                       "last_name": "Ellsworth",
-		                       "date": "5",
+		                       "date": "12/13/2013",
 		                       "hour": "5",
 		                       "minute": "3"
 		                   }		
@@ -33,7 +33,7 @@ $(document).ready(function(){
 //    }); // end ready
     
     function createRow(data){
-    	var isPastDateClass = isPastDate(data.date) ? "past" : "";
+    	var isPastDateClass = isPastDate(data.date, data.hour, data.minute) ? "past" : "";
     	var names = '<div class = "data_holder ' + isPastDateClass + '"><p class ="name">' + data.first_name + " " + data.last_name + '</p>';
 		var date = '<p class ="date">' + data.date + data.hour + data.minute + '</p></div>';
 	    var line = '<div class ="line"></div>';
@@ -41,8 +41,10 @@ $(document).ready(function(){
 		$('#right').append(output);
     }
     
-    function isPastDate(date){
-    	return false;
+    function isPastDate(date, hour, minute){
+    	var currentDate = new Date();
+    	var date = new Date(date + " " + hour + ":" + minute + ":00");
+    	return date < currentDate;
     }
     
 });

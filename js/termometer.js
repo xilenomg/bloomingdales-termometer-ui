@@ -2,7 +2,7 @@ var Thermometer = function(bottomImageElement, topImageElement, partialImageElem
 	//constants values
 	var maxPercentageValue = 80;
 	var maxAmountValue = 500000;
-	var currentAmountValue = 500000;
+	var currentAmountValue = 460000;
 	
 	//self variable referecing to this own class
 	var self = this;
