@@ -1,36 +1,58 @@
 var Thermometer = function(bottomImageElement, topImageElement, partialImageElement, lastImageURL){
-	var maxValue = 80;
+	//constants values
+	var maxPercentageValue = 80;
+	var maxAmountValue = 500000;
+	var currentAmountValue = 430000;
 	
+	//self variable referecing to this own class
 	var self = this;
+	
+	//defining variables
 	self.bottomImageElement = $(bottomImageElement);
 	self.topImageElement = $(topImageElement);
 	self.partialImageElement = $(partialImageElement);
 	self.lastImageURL = lastImageURL;
-
+	
+	//constructor
 	self.init = function(){
-		self.animate();
+		var heightValueTo = self.calculateHeightValue();
+		self.animate(heightValueTo);
+	};
+	
+	self.calculateHeightValue = function(){
+		//getting percentage value of current amount value from max value
+		var percentage = currentAmountValue / maxAmountValue * 100;
+		var value = maxPercentageValue * percentage / 100;
+		
+		return value;
 	};
 
-	self.animate = function(){
+	self.animate = function(heightValue){
 		self.topImageElement.animate({
-			height: "80%"
+			height: heightValue + "%"
 		}, 
 		{
 			duration: 1000,
 			step: function( now, fx ){
-				self.handleTop(now);
-			},
-			complete: function(){
-//				self.topImageElement.css('background-image', 'url("' + self.lastImageURL + '")');
+				self.handleTopImage(now, fx);
 			}
 		});
 	};
 	
-	self.handleTop = function(now){
+	self.handleTopImage = function(now, fx){
 		partialImageElement.css("top",(self.topImageElement.offset().top)-30);
+		partialImageElement.css("left", self.calculateLeftGap(now, fx));
 	};
 
-
+	self.calculateLeftGap = function(now,fx){
+		var percentage = now/maxPercentageValue  * 100;
+		var gapStarts = -4;
+		var gapEnds = 0;
+		var diff = gapEnds - gapStarts;
+		var finalValue = (diff - (percentage * 4 / 100)) * -1;
+		return finalValue;
+	};
+	
 	self.init();
 };
 
