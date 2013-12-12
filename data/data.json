@@ -1,6 +1,26 @@
-var data = [
-	 {first_name: "Heidi", last_name: "Ellsworth", date: "", hour:"", minute: ""},
-	 {first_name: "Chelsey", last_name: "Puttick", date: "", hour:"", minute: ""},
-	 {first_name: "Dana", last_name: "Olsen", date: "", hour:"", minute: ""},
-	 {first_name: "Samantha", last_name: "Bird", date: "", hour:"", minute: ""}
-];
+{
+    "data_posts": [
+        {
+            "first_name": "Heidi",
+            "last_name": "Ellsworth",
+            "date": "5",
+            "hour": "5",
+            "minute": "3"
+        },
+		{
+            "first_name": "Heidi",
+            "last_name": "Ellsworth",
+            "date": "5",
+            "hour": "5",
+            "minute": "3"
+        },
+		{
+            "first_name": "Heidi",
+            "last_name": "Ellsworth",
+            "date": "5",
+            "hour": "5",
+            "minute": "3"
+        }		
+		
+    ]
+}
