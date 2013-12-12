@@ -17,6 +17,7 @@
 	bottom:0px;
 	background: url("../images/pink_area.png")  no-repeat bottom center;
 	width: 330px;
+	height:8%;
 	overflow: hidden;
 }
 
