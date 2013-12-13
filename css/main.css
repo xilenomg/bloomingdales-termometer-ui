@@ -1,0 +1,42 @@
+.main {
+	position: relative;
+	margin: 0 auto;
+	width: 868px;
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+}
+
+.header {
+	position: relative;
+	top: 0px;
+	padding-top: 10px;
+	background: white;
+	border: 0px;
+}
+
+.leftTabContent {
+	float: left;
+}
+
+.leftTabContent,.rightTabContent {
+	width: 426px;
+}
+
+.rightTabContent {
+	float: right;
+}
+
+.votes {
+	height: 600px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: #e80378;
+	font-size: 29px;
+	text-align: center;
+}
+
+h1 span.black{
+	color: #000000;
+}

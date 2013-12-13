@@ -1,7 +1,3 @@
-*{
-	font-size: 11px;
-}
-
 .brown-bag{
 	position: relative;
 	width: 330px;
@@ -9,8 +5,7 @@
 	overflow: hidden;	
 	display: block;
 	background: url("../images/brown_bag.png") no-repeat left center;
-	margin: 200px auto;
-	
+	margin: 100px auto;
 }
 
 .pink-bag{
@@ -40,7 +35,7 @@
 	background: url("../images/counter_background.png")  no-repeat;
 	width: 313px;
 	height: 79px;
-	margin: 200px auto;
+	margin: 1px auto;
 	text-align: center;
 	padding-top: 27px;
 	font-size: 25pt;
