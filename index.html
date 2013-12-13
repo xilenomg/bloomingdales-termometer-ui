@@ -5,13 +5,34 @@
 <title>Insert title here</title>
 <link href="css/termometer.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/termometer.js"></script>
+
 </head>
 <body>
-	<div class="brown-bag">
-		<img src="images/pink_bag_top.png" class="pink-bag-top" />
-		<div class="pink-bag">
+	<div class="header">
+	
+	</div>
+	<div class="leftTabContent">
+		<div class="brown-bag">
+			<img src="images/pink_bag_top.png" class="pink-bag-top" />
+			<div class="pink-bag"></div>
+			<div class="white-ticks"></div>
+		</div>
+		
+		<div class="numberCounter">
+			
 		</div>
 	</div>
+	
+	<div class="rightTabContent">
+		
+	</div>
+	<script src="js/termometer.js"></script>
+	<script>
+	$(document).ready(function(){
+		var currentAmountValue = 454646289.51;
+		var thermometer = new Thermometer(currentAmountValue);
+	});
+
+	</script>
 </body>
 </html>

@@ -4,12 +4,13 @@
 
 .brown-bag{
 	position: relative;
-	bottom: 0px;
 	width: 330px;
 	height: 292px;
 	overflow: hidden;	
 	display: block;
 	background: url("../images/brown_bag.png") no-repeat left center;
+	margin: 200px auto;
+	
 }
 
 .pink-bag{
@@ -20,9 +21,30 @@
 	height:8%;
 	overflow: hidden;
 }
-
+.white-ticks{
+	position: relative;
+	bottom: 0px;
+	width: 330px;
+	height: 292px;
+	overflow: hidden;	
+	display: block;
+	background: url("../images/white_ticks.png")  no-repeat bottom center;
+}
 .pink-bag-top{
 	position: absolute;
 	bottom: 0px;
 	left:-4px;
+}
+
+.numberCounter{
+	background: url("../images/counter_background.png")  no-repeat;
+	width: 313px;
+	height: 79px;
+	margin: 200px auto;
+	text-align: center;
+	padding-top: 27px;
+	font-size: 25pt;
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	color: #e80378;
+	font-weight: bold;
 }
