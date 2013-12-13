@@ -1,13 +1,12 @@
 .data_holder {
-	width:370px;
 	padding-bottom: 5px;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-top: 5px;
     border-bottom:1px solid #CECECE;
 }
 
 .past {
-	background-color:#cac2c2;
+	background-color:#EFEFEF;
 	color:grey;
 }
 
@@ -17,6 +16,7 @@
 }
 p.date {
 	font-weight:bold;
+	text-transform: uppercase;
 }
 .line {
 	width:375px;
