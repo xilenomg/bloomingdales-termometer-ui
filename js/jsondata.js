@@ -5,7 +5,7 @@ $(document).ready(function(){
 //		$(".votes").scrollTop($(".past:last").next().position().top - $(".votes").position().top);
 		$(".votes").animate({
 			scrollTop: $(".past:last").next().position().top - $(".votes").position().top
-		}, 3000);
+		}, 1000);
 	}
 	
 	$(data.data_posts).each(function(i, data) {
