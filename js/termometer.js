@@ -39,6 +39,11 @@ var Thermometer = function(currentAmountValue){
 			step: function( now, fx ){
 				self.handlePartialImage(now, fx);
 				self.updateCounterNumber(now, fx);
+			},
+			complete: function(){
+				if ( self.currentAmountValue === maxAmountValue ){ 
+					alert("hi");
+				}
 			}
 		});
 	};
