@@ -42,7 +42,7 @@ var Thermometer = function(currentAmountValue){
 			},
 			complete: function(){
 				if ( self.currentAmountValue === maxAmountValue ){ 
-					alert("hi");
+					self.goalAchievement();
 				}
 			}
 		});
@@ -98,6 +98,13 @@ var Thermometer = function(currentAmountValue){
 	    }
 	    return s.join(dec);
 	
+	};
+	
+	self.goalAchievement = function(){
+		$(".numberCounter").addClass("blink");
+		setTimeout(function(){
+			$(".numberCounter").removeClass("blink");	
+		}, 10000);
 	};
 
 	self.init();

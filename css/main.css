@@ -44,3 +44,32 @@ img.title{
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
+
+.animatedText{
+	clear: both;
+	text-align: center;
+	font-size:100%;
+	color: #e80378;
+	position: absolute;
+	font-weight: bold;
+	margin: 0 auto;
+	top: 130px;
+	padding: 20px;
+	left: 40px;
+	width: 330px;
+}
+
+@keyframes blink {  
+    0% { color: #FFFFFF; }
+    100% { color: #e80378; }
+}
+@-webkit-keyframes blink {
+    0% { color: #FFFFFF; }
+    100% { color: #e80378; }
+}
+
+.blink {
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+} 
