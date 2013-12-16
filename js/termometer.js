@@ -1,10 +1,12 @@
 var Thermometer = function(currentAmountValue){
 	//constants values
-	var maxPercentageValue = 80;
+	var maxPercentageValue = 79.5;
 	var maxAmountValue = 500000000;
+	var minAmountValue = 250000000;
+//	var minAmountValue = 0;
 
 	//self variable referecing to this own class
-	var self = this;
+//	var self = this;
 
 	self.currentAmountValue = currentAmountValue;
 
@@ -22,7 +24,7 @@ var Thermometer = function(currentAmountValue){
 
 	self.calculateHeightValue = function(){
 		//getting percentage value of current amount value from max value
-		var percentage = self.currentAmountValue / maxAmountValue * 100;
+		var percentage = ( self.currentAmountValue - minAmountValue ) / ( maxAmountValue - minAmountValue ) * 100;
 		var value = maxPercentageValue * percentage / 100;
 
 		return value;
@@ -33,7 +35,7 @@ var Thermometer = function(currentAmountValue){
 			height: heightValue + "%"
 		}, 
 		{
-			duration: 700,
+			duration: 1300,
 			step: function( now, fx ){
 				self.handlePartialImage(now, fx);
 				self.updateCounterNumber(now, fx);
@@ -52,7 +54,7 @@ var Thermometer = function(currentAmountValue){
 		self.partialImageElement.css("left", self.calculateLeftGap(now, fx));
 	};
 
-	var gapStarts = -4;
+	var gapStarts = -3;
 	var gapEnds = 0;
 	var diff = gapEnds - gapStarts;
 
@@ -62,7 +64,7 @@ var Thermometer = function(currentAmountValue){
 
 	self.calculateLeftGap = function(now,fx){
 		var percentage = now/maxPercentageValue  * 100;
-		var finalValue = (diff - (percentage * 4 / 100)) * -1;
+		var finalValue = (diff - (percentage * 3 / 100)) * -1;
 		return finalValue;
 	};
 
