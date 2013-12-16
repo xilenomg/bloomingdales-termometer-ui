@@ -1,7 +1,5 @@
 var data = {
-		"data_posts": [
-		{"first_name":"Anna","last_name":"Balber","date":"12/29/2013","hour":4,"minute":4},
-{"first_name":"Megan","last_name":"Lang","date":"01/04/2013","hour":22,"minute":15},
+		"data_posts": [{"first_name":"Megan","last_name":"Lang","date":"01/04/2013","hour":22,"minute":15},
 {"first_name":"Juliana","last_name":"Jerse","date":"12/12/2013","hour":6,"minute":47},
 {"first_name":"Jared","last_name":"Weinberg","date":"12/13/2013","hour":4,"minute":14},
 {"first_name":"Julio","last_name":"Canario","date":"12/14/2013","hour":17,"minute":30},
@@ -33,6 +31,7 @@ var data = {
 {"first_name":"Wendy","last_name":"Wong","date":"12/28/2013","hour":20,"minute":8},
 {"first_name":"Jessica","last_name":"Jones","date":"12/28/2013","hour":23,"minute":11},
 {"first_name":"WENDY","last_name":"MOISES","date":"12/29/2013","hour":2,"minute":4},
+{"first_name":"Anna","last_name":"Balber","date":"12/29/2013","hour":4,"minute":4},
 {"first_name":"Heather","last_name":"Krieg","date":"12/29/2013","hour":6,"minute":9},
 {"first_name":"lauren","last_name":"gass","date":"12/29/2013","hour":10,"minute":15},
 {"first_name":"Jessica","last_name":"Rubin","date":"12/29/2013","hour":14,"minute":20},
@@ -54,6 +53,5 @@ var data = {
 {"first_name":"Coral","last_name":"Ashen","date":"01/06/2014","hour":21,"minute":37},
 {"first_name":"Catherine","last_name":"Sambula","date":"01/07/2014","hour":10,"minute":21},
 {"first_name":"Melanie","last_name":"Pettus","date":"01/09/2014","hour":9,"minute":47},
-{"first_name":"Annand","last_name":"Roopchand","date":"01/15/2014","hour":17,"minute":8}
-]
+{"first_name":"Annand","last_name":"Roopchand","date":"01/15/2014","hour":17,"minute":8}]
 	               };
