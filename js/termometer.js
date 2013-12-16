@@ -1,6 +1,6 @@
 var Thermometer = function(currentAmountValue){
 	//constants values
-	var maxPercentageValue = 79.5;
+	var maxPercentageValue = 232;
 	var maxAmountValue = 500000000;
 	var minAmountValue = 250000000;
 //	var minAmountValue = 0;
@@ -26,13 +26,13 @@ var Thermometer = function(currentAmountValue){
 		//getting percentage value of current amount value from max value
 		var percentage = ( self.currentAmountValue - minAmountValue ) / ( maxAmountValue - minAmountValue ) * 100;
 		var value = maxPercentageValue * percentage / 100;
-
+		
 		return value;
 	};
 
 	self.animate = function(heightValue){
 		self.topImageElement.animate({
-			height: heightValue + "%"
+			height: heightValue
 		}, 
 		{
 			duration: 1300,
@@ -55,7 +55,7 @@ var Thermometer = function(currentAmountValue){
 	};
 
 	self.handlePartialImage = function(now, fx){
-		self.partialImageElement.css("top",self.calculateTopGap(now, fx));
+		self.partialImageElement.css("top", self.calculateTopGap(now, fx));
 		self.partialImageElement.css("left", self.calculateLeftGap(now, fx));
 	};
 
