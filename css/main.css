@@ -31,6 +31,10 @@
 	overflow-x: hidden;
 }
 
+.votes .data_holder p.name {
+    text-transform: capitalize;
+}
+
 h1 {
 	color: #e80378;
 	font-size: 26px;
