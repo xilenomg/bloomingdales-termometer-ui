@@ -6,7 +6,7 @@ var Thermometer = function(currentAmountValue){
 //	var minAmountValue = 0;
 
 	//self variable referecing to this own class
-//	var self = this;
+	var self = this;
 
 	self.currentAmountValue = currentAmountValue;
 

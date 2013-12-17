@@ -95,11 +95,13 @@ var DateFormat = function(dateString){
 		var min = parseInt(time_split[1]);
 		var type = 'AM';
 		
-		if ( hour == 24 ){
+		if ( hour == 24 || hour == 0 ){
 			hour = 12;
 			type = 'AM';
 		} else if ( hour > 12 ) {
 			hour -= 12;
+			type = 'PM';
+		} else if ( hour == 12 ){
 			type = 'PM';
 		}
 		
